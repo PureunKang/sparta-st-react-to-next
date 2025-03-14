@@ -30,10 +30,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <nav>
-          <Link href={"/"}>Home(SSG)</Link>
-          <Link href={"/news"}>News(ISR)</Link>
-          <Link href={"/blogs"}>Blogs(SSR)</Link>
-          <Link href={"/todolist"}>TodoList(CSR)</Link>
+          <Link href="/">Home(SSG)</Link>
+          <Link href="/news">News(ISR)</Link>
+          <Link href="/blogs">Blogs(SSR)</Link>
+          <Link href="/todolist">TodoList(CSR)</Link>
         </nav>
         {children}
       </body>
