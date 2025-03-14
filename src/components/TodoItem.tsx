@@ -1,6 +1,7 @@
+"use client";
 import { useNavigate } from "react-router-dom";
 
-function TodoItem({ todo }) {
+function TodoItem({ todo }: { todo: Todo }) {
   const navigate = useNavigate();
   return (
     <li

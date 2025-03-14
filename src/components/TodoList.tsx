@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import React from "react";
 import TodoItem from "./TodoItem";
 
-type Todos = {
+export type Todos = {
   id: string;
   title: string;
   contents: string;
