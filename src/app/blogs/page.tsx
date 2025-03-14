@@ -5,7 +5,7 @@ const page = async () => {
   const res = await fetch("http://localhost:4000/blogs", {
     cache: "no-store",
   });
-  const data: Promise<Blog[]> = res.json();
+  const data: Blog[] = await res.json();
 
   return (
     <>
