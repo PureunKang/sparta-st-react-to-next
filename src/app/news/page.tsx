@@ -7,7 +7,7 @@ const NewsPage = async () => {
       revalidate: 5,
     },
   });
-  const data: News = await res.json();
+  const data: News[] = await res.json();
 
   return (
     <>
