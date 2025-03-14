@@ -1,10 +1,11 @@
+import { Intro } from "@/types/intro";
 import React from "react";
 
 const HomePage = async () => {
   const res = await fetch("http://localhost:4000/intro", {
     cache: "force-cache",
   });
-  const data = await res.json();
+  const data: Intro = await res.json();
 
   return (
     <>
