@@ -2,7 +2,11 @@ import { News } from "@/types/news";
 import React from "react";
 
 const NewsPage = async () => {
-  const res = await fetch("http://localhost:4000/news");
+  const res = await fetch("http://localhost:4000/news", {
+    next: {
+      revalidate: 5,
+    },
+  });
   const data: News = await res.json();
 
   return (
